@@ -20,7 +20,8 @@ from users import views as user_views
 from django.conf import settings
 from django.conf.urls.static import static
 
-from portal.views import home_view, calendar_view, downloads_view, training_view
+from portal.views import downloads_view, training_view
+from Portal_szkoleniowy.views import home_view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,7 +33,6 @@ urlpatterns = [
 
     # Marlena portal
      path('home/', home_view, name='home'),
-     path('calendar/', calendar_view, name='calendar'),
      path('downloads/', downloads_view, name='downloads'),
      path('training/', training_view, name='training'),
 

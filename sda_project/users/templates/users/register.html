@@ -3,9 +3,10 @@
 <head>
     <meta charset="UTF-8">
     <title>Rejestracja</title>
+    {% extends "base.html" %}
 </head>
 <body>
-
+{% block content %}
 {% load crispy_forms_tags %}
 
     <div >
@@ -25,5 +26,6 @@
             </small>
         </div>
     </div>
+{% endblock %}
 </body>
 </html>
